@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-     <title>PHPJabbers.com | Free Blog Website Template</title>
+     <title>Blog</title>
 
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -42,7 +42,7 @@
                     </button>
 
                     <!-- lOGO TEXT HERE -->
-                    <a href="#" class="navbar-brand">Blog Website</a>
+                    <a href="#" class="navbar-brand">My Blog</a>
                </div>
 
                <!-- MENU LINKS -->
@@ -141,11 +141,11 @@
                                    </div>
 
                                    <div class="courses-detail">
-                                        <h3><a href="blog-post-details.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h3>
+                                        <h3><a href="/blog-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h3>
                                    </div>
 
                                    <div class="courses-info">
-                                        <a href="blog-post-details.html" class="section-btn btn btn-primary btn-block">Read More</a>
+                                        <a href="/blog-detail" class="section-btn btn btn-primary btn-block">Read More</a>
                                    </div>
                               </div>
                          </div>
@@ -164,11 +164,11 @@
                                    </div>
 
                                    <div class="courses-detail">
-                                        <h3><a href="blog-post-details.html">Tempora molestiae, iste, consequatur unde sint praesentium!</a></h3>
+                                        <h3><a href="/blog-detail">Tempora molestiae, iste, consequatur unde sint praesentium!</a></h3>
                                    </div>
 
                                    <div class="courses-info">
-                                        <a href="blog-post-details.html" class="section-btn btn btn-primary btn-block">Read More</a>
+                                        <a href="/blog-detail" class="section-btn btn btn-primary btn-block">Read More</a>
                                    </div>
                               </div>
                          </div>
@@ -187,11 +187,11 @@
                                    </div>
 
                                    <div class="courses-detail">
-                                        <h3><a href="blog-post-details.html">A voluptas ratione, error provident distinctio, eaque id officia?</a></h3>
+                                        <h3><a href="/blog-detail">A voluptas ratione, error provident distinctio, eaque id officia?</a></h3>
                                    </div>
 
                                    <div class="courses-info">
-                                        <a href="blog-post-details.html" class="section-btn btn btn-primary btn-block">Read More</a>
+                                        <a href="/blog-detail" class="section-btn btn btn-primary btn-block">Read More</a>
                                    </div>
                               </div>
                          </div>

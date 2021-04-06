@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-     <title>PHPJabbers.com | Free Blog Website Template</title>
+     <title>Blog</title>
 
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -44,7 +44,7 @@
                     </button>
 
                     <!-- lOGO TEXT HERE -->
-                    <a href="#" class="navbar-brand">Blog Website</a>
+                    <a href="#" class="navbar-brand">My Blog</a>
                </div>
 
                <!-- MENU LINKS -->

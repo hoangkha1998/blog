@@ -29,6 +29,10 @@ Route::get('/team', function () {
     return view('team');
 });
 
+Route::get('/blog-detail', function () {
+    return view('blog-detail');
+});
+
 Route::prefix('admin')->group(function () {
     
 });
