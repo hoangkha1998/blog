@@ -10,7 +10,7 @@
             <i class="fa fa-eye"></i> 114
        </p>
 
-       <img src="images/other-image-fullscreen-1-1920x700.jpg" class="img-responsive" alt="">
+       <img src="user/images/other-image-fullscreen-1-1920x700.jpg" class="img-responsive" alt="">
 
        <br>
 

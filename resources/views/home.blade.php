@@ -72,7 +72,7 @@
                               <div class="courses-thumb courses-thumb-secondary">
                                    <div class="courses-top">
                                         <div class="courses-image">
-                                             <img src="images/product-1-720x480.jpg" class="img-responsive" alt="">
+                                             <img src="user/images/product-1-720x480.jpg" class="img-responsive" alt="">
                                         </div>
                                         <div class="courses-date">
                                              <span title="Author"><i class="fa fa-user"></i> John Doe</span>
@@ -95,7 +95,7 @@
                               <div class="courses-thumb courses-thumb-secondary">
                                    <div class="courses-top">
                                         <div class="courses-image">
-                                             <img src="images/product-2-720x480.jpg" class="img-responsive" alt="">
+                                             <img src="user/images/product-2-720x480.jpg" class="img-responsive" alt="">
                                         </div>
                                         <div class="courses-date">
                                              <span title="Author"><i class="fa fa-user"></i> John Doe</span>
@@ -118,7 +118,7 @@
                               <div class="courses-thumb courses-thumb-secondary">
                                    <div class="courses-top">
                                         <div class="courses-image">
-                                             <img src="images/product-3-720x480.jpg" class="img-responsive" alt="">
+                                             <img src="user/images/product-3-720x480.jpg" class="img-responsive" alt="">
                                         </div>
                                         <div class="courses-date">
                                              <span title="Author"><i class="fa fa-user"></i> John Doe</span>
@@ -169,7 +169,7 @@
 
                     <div class="col-md-6 col-sm-12">
                          <div class="contact-image">
-                              <img src="images/contact-1-600x400.jpg" class="img-responsive" alt="Smiling Two Girls">
+                              <img src="user/images/contact-1-600x400.jpg" class="img-responsive" alt="Smiling Two Girls">
                          </div>
                     </div>
 

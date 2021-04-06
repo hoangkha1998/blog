@@ -48,7 +48,7 @@
                               <div class="courses-thumb courses-thumb-secondary">
                                    <div class="courses-top">
                                         <div class="courses-image">
-                                             <img src="images/product-1-720x480.jpg" class="img-responsive" alt="">
+                                             <img src="user/images/product-1-720x480.jpg" class="img-responsive" alt="">
                                         </div>
                                         <div class="courses-date">
                                              <span title="Author"><i class="fa fa-user"></i> John Doe</span>
@@ -71,7 +71,7 @@
                               <div class="courses-thumb courses-thumb-secondary">
                                    <div class="courses-top">
                                         <div class="courses-image">
-                                             <img src="images/product-2-720x480.jpg" class="img-responsive" alt="">
+                                             <img src="user/images/product-2-720x480.jpg" class="img-responsive" alt="">
                                         </div>
                                         <div class="courses-date">
                                              <span title="Author"><i class="fa fa-user"></i> John Doe</span>
@@ -94,7 +94,7 @@
                               <div class="courses-thumb courses-thumb-secondary">
                                    <div class="courses-top">
                                         <div class="courses-image">
-                                             <img src="images/product-3-720x480.jpg" class="img-responsive" alt="">
+                                             <img src="user/images/product-3-720x480.jpg" class="img-responsive" alt="">
                                         </div>
                                         <div class="courses-date">
                                              <span title="Author"><i class="fa fa-user"></i> John Doe</span>
@@ -117,7 +117,7 @@
                               <div class="courses-thumb courses-thumb-secondary">
                                    <div class="courses-top">
                                         <div class="courses-image">
-                                             <img src="images/product-4-720x480.jpg" class="img-responsive" alt="">
+                                             <img src="user/images/product-4-720x480.jpg" class="img-responsive" alt="">
                                         </div>
                                         <div class="courses-date">
                                              <span title="Author"><i class="fa fa-user"></i> John Doe</span>
@@ -140,7 +140,7 @@
                               <div class="courses-thumb courses-thumb-secondary">
                                    <div class="courses-top">
                                         <div class="courses-image">
-                                             <img src="images/product-5-720x480.jpg" class="img-responsive" alt="">
+                                             <img src="user/images/product-5-720x480.jpg" class="img-responsive" alt="">
                                         </div>
                                         <div class="courses-date">
                                              <span title="Author"><i class="fa fa-user"></i> John Doe</span>
@@ -163,7 +163,7 @@
                               <div class="courses-thumb courses-thumb-secondary">
                                    <div class="courses-top">
                                         <div class="courses-image">
-                                             <img src="images/product-6-720x480.jpg" class="img-responsive" alt="">
+                                             <img src="user/images/product-6-720x480.jpg" class="img-responsive" alt="">
                                         </div>
                                         <div class="courses-date">
                                              <span title="Author"><i class="fa fa-user"></i> John Doe</span>
