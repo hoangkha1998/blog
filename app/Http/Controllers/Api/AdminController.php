@@ -16,7 +16,10 @@ class AdminController extends Controller
     public function index()
     {
         $users = User::all();
-        return $users->toJson();
+        return \json_encode([
+          'status'  =>  200,
+          'data'    =>  $users
+        ]);
     }
 
     /**
@@ -37,7 +40,11 @@ class AdminController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $user = User::create($request->all());
+        return \json_encode([
+          'status'  =>  200,
+          'data'    =>  $user
+        ]);
     }
 
     /**
@@ -49,7 +56,10 @@ class AdminController extends Controller
     public function show($id)
     {
         $user = User::findOrFail($id);
-        return $user->toJson();
+        return \json_encode([
+          'status' => 200,
+          'data'   => $user
+        ]);
     }
 
     /**
@@ -83,6 +93,11 @@ class AdminController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $user = User::findOrFail($id);
+        $user->delete();
+        return \json_encode([
+          'status'  =>  200,
+          'message' =>  'delete success'
+        ]);
     }
 }

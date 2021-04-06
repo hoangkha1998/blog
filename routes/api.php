@@ -22,6 +22,8 @@ Route::prefix('v1/')->group(function () {
         Route::prefix('/user')->group(function () {
             Route::get('/', 'AdminController@index')->name('admin-user');
             Route::get('/{id}', 'AdminController@show')->name('admin-user-id');
+            Route::post('/', 'AdminController@store')->name('admin-user-create');
+            Route::delete('/{id}', 'AdminController@destroy')->name('admin-user-delete');
         });
     });
 });
