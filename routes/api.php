@@ -14,6 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+// Route::middleware('auth:api')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
+Route::prefix('v1/')->group(function () {
+    Route::prefix('/admin')->group(function () {
+        Route::prefix('/user')->group(function () {
+            Route::get('/', 'AdminController@index')->name('admin-user');
+            Route::get('/{id}', 'AdminController@show')->name('admin-user-id');
+        });
+    });
 });
