@@ -9,26 +9,27 @@
               <ul class="navbar-nav flex-column">
                   <li class="nav-divider">
                       Menu
+                      <a class="nav-link" href="{{route('admin.post.index')}}">List</a> 
                   </li>
                   <li class="nav-item ">
-                      <a class="nav-link active" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"></i>Post <span class="badge badge-success">6</span></a>
+                      <a class="nav-link active" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fas fa-file-alt"></i>Post <span class="badge badge-success">6</span></a>
                       <div id="submenu-1" class="collapse submenu" style="">
                           <ul class="nav flex-column">
                               <li class="nav-item">
                                   <a class="nav-link" href="{{route('admin.post.index')}}">List</a>                                  
                               </li>
                               <li class="nav-item">
-                                  <a class="nav-link" href="dashboard-finance.html">Add</a>
+                                  <a class="nav-link" href="{{route('admin.post.create')}}">Add</a>
                               </li>                              
                           </ul>
                       </div>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2"><i class="fa fa-fw fa-rocket"></i>Users</a>
+                    <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2"><i class="fa fa-fw fa-user-circle"></i>Users</a>
                     <div id="submenu-2" class="collapse submenu" style="">
                         <ul class="nav flex-column">                            
                             <li class="nav-item">
-                                <a class="nav-link" href="pages/general.html">List</a>
+                                <a class="nav-link" href="{{route('admin.user.index')}}">List</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="pages/carousel.html">Add</a>

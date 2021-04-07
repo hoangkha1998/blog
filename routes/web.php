@@ -37,6 +37,10 @@ Route::group(['prefix'=>'admin', 'as'=>'admin.', 'middleware' => ['auth:web']],f
     Route::get('/', 'DashboardController@index')->name('index');
     Route::group(['prefix'=>'post', 'as'=>'post.'],function () {
         Route::get('/', 'PostController@index')->name('index');
+        Route::get('/create', 'PostController@create')->name('create');
+    });
+    Route::group(['prefix'=>'user', 'as'=>'user.'],function () {
+        Route::get('/', 'UserController@index')->name('index');
     });
 });
 
