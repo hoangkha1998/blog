@@ -33,8 +33,15 @@ Route::get('/blog-detail', function () {
     return view('user.blog-detail');
 });
 
-Route::prefix('admin')->group(function () {
-    Route::get('/', function () {
-        return view('admin.dashboard');
+Route::group(['prefix'=>'admin', 'as'=>'admin.', 'middleware' => ['auth:web']],function () {
+    Route::get('/', 'DashboardController@index')->name('index');
+    Route::group(['prefix'=>'post', 'as'=>'post.'],function () {
+        Route::get('/', 'PostController@index')->name('index');
     });
 });
+
+Auth::routes();
+
+Route::get('admin/login', 'Auth\LoginController@showLoginFormUsers')->name('login');
+Route::post('login', 'Auth\LoginController@checklogin')->name('postLogin');
+Route::post('logout', 'Auth\LoginController@logout')->name('logout');
