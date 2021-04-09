@@ -12,6 +12,7 @@
                           <th scope="col">Title</th>
                           <th scope="col">Meta</th>
                           <th scope="col">Content</th>
+                          <th scope="col" colspan="2">Action</th>
                       </tr>
                   </thead>
                   <tbody>
@@ -21,6 +22,8 @@
                             <td>{{$post->title}}</td>
                             <td>{{$post->metaTitle}}</td>
                             <td>{{$post->content}}</td>
+                            <td><a class="btn btn-primary" href="">Edit</a></td>
+                            <td><a class="btn btn-danger" href="">Delete</a></td>
                         </tr>
                       @endforeach                     
                   </tbody>

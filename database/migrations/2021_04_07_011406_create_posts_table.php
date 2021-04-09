@@ -18,7 +18,7 @@ class CreatePostsTable extends Migration
             $table->bigInteger('authorId')->unsigned();
             $table->text('title');
             $table->text('metaTitle');
-            $table->string('slug');
+            $table->string('slug')->nullable();
             $table->text('content');
             $table->text('images');
             $table->tinyInteger('isBanner')->default(0);

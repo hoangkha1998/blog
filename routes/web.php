@@ -38,10 +38,14 @@ Route::group(['prefix'=>'admin', 'as'=>'admin.', 'middleware' => ['auth:web']],f
     Route::group(['prefix'=>'post', 'as'=>'post.'],function () {
         Route::get('/', 'PostController@index')->name('index');
         Route::get('/create', 'PostController@create')->name('create');
+        Route::post('/store', 'PostController@store')->name('store');
     });
     Route::group(['prefix'=>'user', 'as'=>'user.'],function () {
         Route::get('/', 'UserController@index')->name('index');
     });
+
+    Route::get('stripe', 'StripePaymentController@stripe')->name('stripe.get');
+    Route::post('stripe', 'StripePaymentController@stripePost')->name('stripe.post');
 });
 
 Auth::routes();
@@ -49,3 +53,9 @@ Auth::routes();
 Route::get('admin/login', 'Auth\LoginController@showLoginFormUsers')->name('login');
 Route::post('login', 'Auth\LoginController@checklogin')->name('postLogin');
 Route::post('logout', 'Auth\LoginController@logout')->name('logout');
+Route::get('admin/signup', 'Auth\LoginController@showSignUpFormUsers')->name('signup');
+Route::post('signup', 'Auth\LoginController@signup')->name('postSignup');
+
+
+// Route::get('stripe', 'StripePaymentController@stripe');
+// Route::post('stripe', 'StripePaymentController@stripePost')->name('stripe.post');

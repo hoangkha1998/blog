@@ -36,7 +36,16 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Post::create([
+            'authorId'=> auth()->user()->id,
+            'title' => $request->title,
+            'metaTitle'=> $request->metaTitle,
+            'content'=>$request->content,
+            'slug'=> \Str::slug($request->title, '--'),
+            'isBanner' => $request->has('isBanner') ? 1 : 0,
+            'isDisplay' => $request->has('isDisplay') ? 1 : 0,
+        ]);
+        return \redirect()->route('admin.post.index');
     }
 
     /**

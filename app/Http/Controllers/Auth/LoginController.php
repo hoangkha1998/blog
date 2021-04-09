@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
+use App\Models\User;    
 
 class LoginController extends Controller
 {
@@ -68,5 +69,23 @@ class LoginController extends Controller
         $request->session()->flush();
         $request->session()->regenerate();
         return redirect('/');
+    }
+
+    public function showSignUpFormUsers()
+    {
+        return view('admin.auth.register');
+    }
+
+    public function signup(Request $request)
+    {
+        $validator = $request->validate([
+            'name'      => 'required|min:1',
+            'email'     => 'required',
+            'password'  => 'required|min:6'
+          ]);
+  
+          User::create($validator);
+  
+          return redirect('/admin/login');
     }
 }
