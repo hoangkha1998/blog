@@ -17,7 +17,8 @@ class Post extends Model
         'slug',
         'content',
         'isBanner',
-        'isDisplay'
+        'isDisplay',
+        'images'
     ];
 
     public function author()
