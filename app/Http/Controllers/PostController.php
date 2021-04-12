@@ -44,6 +44,7 @@ class PostController extends Controller
             'slug'=> \Str::slug($request->title, '--'),
             'isBanner' => $request->has('isBanner') ? 1 : 0,
             'isDisplay' => $request->has('isDisplay') ? 1 : 0,
+            'images'=>''
         ]);
         return \redirect()->route('admin.post.index');
     }
