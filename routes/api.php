@@ -19,11 +19,21 @@ use Illuminate\Support\Facades\Route;
 // });
 Route::prefix('v1/')->group(function () {
     Route::prefix('/admin')->group(function () {
-        Route::prefix('/user')->group(function () {
+        Route::group(['prefix'=>'user', 'middleware' => 'auth:api'],function () {
             Route::get('/', 'AdminController@index')->name('admin-user');
             Route::get('/{id}', 'AdminController@show')->name('admin-user-id');
             Route::post('/', 'AdminController@store')->name('admin-user-create');
             Route::delete('/{id}', 'AdminController@destroy')->name('admin-user-delete');
+        });
+    });
+
+    Route::group(['prefix' => 'auth'], function () {
+        Route::post('login', 'AuthController@login')->name('admin-post-login');
+        Route::post('signup', 'AuthController@signup');
+      
+        Route::group(['middleware' => 'auth:api'], function() {
+            Route::get('logout', 'AuthController@logout');
+            Route::get('user', 'AuthController@user');
         });
     });
 });
